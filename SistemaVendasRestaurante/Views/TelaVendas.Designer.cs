@@ -105,6 +105,7 @@
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(222, 27);
             this.txtTotal.TabIndex = 17;
+            this.txtTotal.Text = "0";
             // 
             // txtBoxQuantidadeTotal
             // 
@@ -112,6 +113,7 @@
             this.txtBoxQuantidadeTotal.Name = "txtBoxQuantidadeTotal";
             this.txtBoxQuantidadeTotal.Size = new System.Drawing.Size(177, 27);
             this.txtBoxQuantidadeTotal.TabIndex = 18;
+            this.txtBoxQuantidadeTotal.Text = "0";
             // 
             // TelaVendas
             // 

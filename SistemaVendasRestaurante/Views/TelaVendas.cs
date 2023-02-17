@@ -25,8 +25,9 @@ namespace SistemaVendasRestaurante.Views
             double? valor = adicionar.AdicionarProduto(txtBoxNome.Text, int.Parse(txtBoxQnt.Text));
             if (valor != null)
             {
-                txtTotal.Text = (double.Parse(txtTotal.Text) + valor).ToString(); 
+                txtTotal.Text = (double.Parse(txtTotal.Text) + valor).ToString();
                 txtBoxQuantidadeTotal.Text = (int.Parse(txtBoxQuantidadeTotal.Text) + int.Parse(txtBoxQnt.Text)).ToString();
+                MessageBox.Show("Produto adionado com sucesso!"); 
             }
             else
             {

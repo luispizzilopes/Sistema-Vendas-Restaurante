@@ -35,7 +35,7 @@
             // 
             // btnAcessar
             // 
-            this.btnAcessar.Location = new System.Drawing.Point(43, 83);
+            this.btnAcessar.Location = new System.Drawing.Point(178, 181);
             this.btnAcessar.Name = "btnAcessar";
             this.btnAcessar.Size = new System.Drawing.Size(94, 29);
             this.btnAcessar.TabIndex = 2;
@@ -45,14 +45,14 @@
             // 
             // txtBoxUsuario
             // 
-            this.txtBoxUsuario.Location = new System.Drawing.Point(12, 17);
+            this.txtBoxUsuario.Location = new System.Drawing.Point(147, 115);
             this.txtBoxUsuario.Name = "txtBoxUsuario";
             this.txtBoxUsuario.Size = new System.Drawing.Size(125, 27);
             this.txtBoxUsuario.TabIndex = 0;
             // 
             // txtBoxSenha
             // 
-            this.txtBoxSenha.Location = new System.Drawing.Point(12, 50);
+            this.txtBoxSenha.Location = new System.Drawing.Point(147, 148);
             this.txtBoxSenha.Name = "txtBoxSenha";
             this.txtBoxSenha.Size = new System.Drawing.Size(125, 27);
             this.txtBoxSenha.TabIndex = 1;

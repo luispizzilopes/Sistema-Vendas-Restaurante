@@ -38,6 +38,5 @@ namespace SistemaVendasRestaurante.Models.TelaVendas
                 return null; 
             }
         }
-
     }
 }
