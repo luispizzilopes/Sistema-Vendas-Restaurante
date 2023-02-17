@@ -18,12 +18,32 @@ namespace SistemaVendasRestaurante.Views
             InitializeComponent();
         }
 
+        public void BloquearCampos()
+        {
+            txtBoxNomeBusca.Enabled = false;
+            txtBoxValorBusca.Enabled = false;
+            btnEditar.Enabled = false;
+            btnExcluir.Enabled = false;
+            txtBoxNomeBusca.Text = "";
+            txtBoxValorBusca.Text = "";
+        }
+
+        public void DesbloquearCampos()
+        {
+            txtBoxNomeBusca.Enabled = true;
+            txtBoxValorBusca.Enabled = true;
+            btnEditar.Enabled = true;
+            btnExcluir.Enabled = true;
+        }
+
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             CadastrarProdutoController controllerCadastrar = new CadastrarProdutoController();
             if(controllerCadastrar.CadastrarProduto(txtBoxNome.Text, double.Parse(txtBoxValor.Text)) == true)
             {
-                MessageBox.Show("Produto cadastrado com sucesso!"); 
+                MessageBox.Show("Produto cadastrado com sucesso!");
+                txtBoxValor.Text = "";
+                txtBoxNome.Text = ""; 
             }
             else
             {
@@ -38,7 +58,8 @@ namespace SistemaVendasRestaurante.Views
             {
                 string[] campos = buscar.BuscarProduto(txtBoxBusca.Text);
                 txtBoxNomeBusca.Text = campos[0];
-                txtBoxValorBusca.Text = double.Parse(campos[1]).ToString("N2");   
+                txtBoxValorBusca.Text = double.Parse(campos[1]).ToString("N2");
+                DesbloquearCampos(); 
             }
             else
             {
@@ -51,7 +72,8 @@ namespace SistemaVendasRestaurante.Views
             EditarProdutoController editar = new EditarProdutoController(); 
             if(editar.EditarProduto(txtBoxNomeBusca.Text, double.Parse(txtBoxValorBusca.Text), txtBoxBusca.Text) == true)
             {
-                MessageBox.Show("Produto editado com sucesso!"); 
+                MessageBox.Show("Produto editado com sucesso!");
+                BloquearCampos();
             }
             else
             {
@@ -64,7 +86,8 @@ namespace SistemaVendasRestaurante.Views
             ExcluirProdutoController excluir = new ExcluirProdutoController(); 
             if(excluir.ExcluirProduto(txtBoxNomeBusca.Text) == true)
             {
-                MessageBox.Show("Produto excluido com sucesso!"); 
+                MessageBox.Show("Produto excluido com sucesso!");
+                BloquearCampos(); 
             }
             else
             {
