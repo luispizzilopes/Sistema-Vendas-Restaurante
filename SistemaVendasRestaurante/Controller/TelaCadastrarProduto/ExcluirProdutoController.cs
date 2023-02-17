@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 
 namespace SistemaVendasRestaurante.Controller.TelaCadastrarProduto
 {
-    internal class CadastrarProdutoController
+    internal class ExcluirProdutoController
     {
-        CadastrarProdutoModel cadastrar = new CadastrarProdutoModel();
-        
-        public bool CadastrarProduto(string nome, double preco)
+        ExcluirProdutoModel excluir = new ExcluirProdutoModel();
+
+        public bool ExcluirProduto(string nome)
         {
-            if(cadastrar.CadastrarProduto(nome,preco) == true)
+            if(excluir.ExcluirProduto(nome) == true)
             {
-                return true; 
+                return true;
             }
             else
             {

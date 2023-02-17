@@ -7,19 +7,19 @@ using System.Threading.Tasks;
 
 namespace SistemaVendasRestaurante.Controller.TelaCadastrarProduto
 {
-    internal class CadastrarProdutoController
+    internal class BuscarProdutoController
     {
-        CadastrarProdutoModel cadastrar = new CadastrarProdutoModel();
-        
-        public bool CadastrarProduto(string nome, double preco)
+        BuscarProdutoModel buscar = new BuscarProdutoModel();
+
+        public string[] BuscarProduto(string nome)
         {
-            if(cadastrar.CadastrarProduto(nome,preco) == true)
+            if(buscar.BuscarProduto(nome) != null)
             {
-                return true; 
+                return buscar.BuscarProduto(nome);
             }
             else
             {
-                return false;
+                return null; 
             }
         }
     }

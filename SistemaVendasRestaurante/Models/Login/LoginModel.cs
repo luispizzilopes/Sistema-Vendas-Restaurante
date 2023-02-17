@@ -34,6 +34,7 @@ namespace SistemaVendasRestaurante.Models.Login
             {
                 return false;
             }
+            finally { conexao.Desconectar(); }
         }
     }
 }

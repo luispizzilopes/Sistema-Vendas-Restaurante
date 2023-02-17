@@ -23,7 +23,9 @@ namespace SistemaVendasRestaurante.Views
             LoginController loginController = new LoginController();
             if(loginController.Acessar(txtBoxUsuario.Text, txtBoxSenha.Text) == true)
             {
-                MessageBox.Show("Acessando...");
+                TelaCadastroProduto tela = new TelaCadastroProduto();
+                tela.Show();
+                Visible = false; 
             }
             else
             {

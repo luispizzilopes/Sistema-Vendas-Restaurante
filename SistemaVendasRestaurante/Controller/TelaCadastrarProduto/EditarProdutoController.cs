@@ -1,19 +1,20 @@
 ﻿using SistemaVendasRestaurante.Models.TelaCadastrarProduto;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace SistemaVendasRestaurante.Controller.TelaCadastrarProduto
 {
-    internal class CadastrarProdutoController
+    internal class EditarProdutoController
     {
-        CadastrarProdutoModel cadastrar = new CadastrarProdutoModel();
-        
-        public bool CadastrarProduto(string nome, double preco)
+        EditarProdutoModel editar = new EditarProdutoModel();
+
+        public bool EditarProduto(string nome, double preco, string busca)
         {
-            if(cadastrar.CadastrarProduto(nome,preco) == true)
+            if(editar.EditarProduto(nome, preco, busca) == true)
             {
                 return true; 
             }

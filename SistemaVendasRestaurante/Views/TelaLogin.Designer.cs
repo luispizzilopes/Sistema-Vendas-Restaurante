@@ -38,7 +38,7 @@
             this.btnAcessar.Location = new System.Drawing.Point(43, 83);
             this.btnAcessar.Name = "btnAcessar";
             this.btnAcessar.Size = new System.Drawing.Size(94, 29);
-            this.btnAcessar.TabIndex = 0;
+            this.btnAcessar.TabIndex = 2;
             this.btnAcessar.Text = "Acessar";
             this.btnAcessar.UseVisualStyleBackColor = true;
             this.btnAcessar.Click += new System.EventHandler(this.btnAcessar_Click);
@@ -48,14 +48,14 @@
             this.txtBoxUsuario.Location = new System.Drawing.Point(12, 17);
             this.txtBoxUsuario.Name = "txtBoxUsuario";
             this.txtBoxUsuario.Size = new System.Drawing.Size(125, 27);
-            this.txtBoxUsuario.TabIndex = 1;
+            this.txtBoxUsuario.TabIndex = 0;
             // 
             // txtBoxSenha
             // 
             this.txtBoxSenha.Location = new System.Drawing.Point(12, 50);
             this.txtBoxSenha.Name = "txtBoxSenha";
             this.txtBoxSenha.Size = new System.Drawing.Size(125, 27);
-            this.txtBoxSenha.TabIndex = 2;
+            this.txtBoxSenha.TabIndex = 1;
             // 
             // TelaLogin
             // 

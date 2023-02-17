@@ -10,7 +10,7 @@ namespace SistemaVendasRestaurante.DAL
     internal class ConexaoBd
     {
         SqlConnection conexao = new SqlConnection();
-        private string StrConexao = @"Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=BdVendasRestaurante;Data Source=DESKTOP-CK95DQO\SQLEXPRESS01";
+        private string StrConexao = @"Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=BdVendasRestaurante;Data Source=DESKTOP-JFDDBJK\SQLEXPRESS"; 
         public string? StrSql = null; 
 
         public ConexaoBd() 
