@@ -22,5 +22,17 @@ namespace SistemaVendasRestaurante.Controller.Login
                 return false;
             }
         }
+
+        public bool Cadastrar(string usuario, string senha)
+        {
+            if(loginModel.Cadastrar(usuario, senha) == true)
+            {
+                return true;
+            }
+            else
+            {
+                return false; 
+            }
+        }
     }
 }

@@ -50,3 +50,4 @@ C:\Users\PC\Downloads\Sistema-Vendas-Restaurante-main\Sistema-Vendas-Restaurante
 C:\Users\PC\Downloads\Sistema-Vendas-Restaurante-main\Sistema-Vendas-Restaurante-main\SistemaVendasRestaurante\obj\Debug\net6.0-windows\ref\SistemaVendasRestaurante.dll
 C:\Users\PC\Downloads\Sistema-Vendas-Restaurante-main\Sistema-Vendas-Restaurante-main\SistemaVendasRestaurante\obj\Debug\net6.0-windows\SistemaVendasRestaurante.Views.TelaPrincipal.resources
 C:\Users\PC\Downloads\Sistema-Vendas-Restaurante-main\Sistema-Vendas-Restaurante-main\SistemaVendasRestaurante\obj\Debug\net6.0-windows\SistemaVendasRestaurante.Views.TelaVendas.resources
+C:\Users\PC\Downloads\Sistema-Vendas-Restaurante-main\Sistema-Vendas-Restaurante-main\SistemaVendasRestaurante\obj\Debug\net6.0-windows\SistemaVendasRestaurante.Views.TelaNovoUsuario.resources

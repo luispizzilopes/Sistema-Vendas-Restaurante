@@ -30,6 +30,7 @@
         {
             this.btnProdutos = new System.Windows.Forms.Button();
             this.btnVendas = new System.Windows.Forms.Button();
+            this.btnNovoUsuario = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnProdutos
@@ -52,11 +53,22 @@
             this.btnVendas.UseVisualStyleBackColor = true;
             this.btnVendas.Click += new System.EventHandler(this.btnVendas_Click);
             // 
+            // btnNovoUsuario
+            // 
+            this.btnNovoUsuario.Location = new System.Drawing.Point(672, 409);
+            this.btnNovoUsuario.Name = "btnNovoUsuario";
+            this.btnNovoUsuario.Size = new System.Drawing.Size(116, 29);
+            this.btnNovoUsuario.TabIndex = 2;
+            this.btnNovoUsuario.Text = "Novo usuário";
+            this.btnNovoUsuario.UseVisualStyleBackColor = true;
+            this.btnNovoUsuario.Click += new System.EventHandler(this.btnNovoUsuario_Click);
+            // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnNovoUsuario);
             this.Controls.Add(this.btnVendas);
             this.Controls.Add(this.btnProdutos);
             this.Name = "TelaPrincipal";
@@ -69,5 +81,6 @@
 
         private Button btnProdutos;
         private Button btnVendas;
+        private Button btnNovoUsuario;
     }
 }

@@ -7,6 +7,9 @@
     <Compile Update="Views\TelaLogin.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Views\TelaNovoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\TelaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>

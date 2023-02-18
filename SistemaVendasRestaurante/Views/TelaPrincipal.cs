@@ -28,5 +28,11 @@ namespace SistemaVendasRestaurante.Views
             TelaVendas tela = new TelaVendas();
             tela.ShowDialog(); 
         }
+
+        private void btnNovoUsuario_Click(object sender, EventArgs e)
+        {
+            TelaNovoUsuario tela = new TelaNovoUsuario(); 
+            tela.ShowDialog();
+        }
     }
 }
